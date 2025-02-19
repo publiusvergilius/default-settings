@@ -55,6 +55,10 @@ sudo snap install docker
  #sudo snap enable docker
 echo 'Succesfully installed!'
 
+echo 'Installing Pop-shell...'
+sudo dnf install gnome-extensions gnome-shell-extension-pop-shell
+echo 'Installed! Logout to apply changes.'
+
 # Check if git is installed
 echo "Checking for Git installation..."
 if ! command -v git &> /dev/null; then
@@ -82,4 +86,3 @@ echo "Cleaning up..."
 rm -rf "$DEST_DIR"
 
 echo "Dotfiles setup complete!"
-
